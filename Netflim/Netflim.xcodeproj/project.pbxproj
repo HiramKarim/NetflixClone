@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F8B3C0425B78F340017F8FC /* NetflimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C0325B78F340017F8FC /* NetflimApp.swift */; };
+		1F8B3C0625B78F340017F8FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C0525B78F340017F8FC /* ContentView.swift */; };
+		1F8B3C0825B78F350017F8FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B3C0725B78F350017F8FC /* Assets.xcassets */; };
+		1F8B3C0B25B78F350017F8FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8B3C0A25B78F350017F8FC /* Preview Assets.xcassets */; };
+		1F8B3C1625B78F350017F8FC /* NetflimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C1525B78F350017F8FC /* NetflimTests.swift */; };
+		1F8B3C2125B78F350017F8FC /* NetflimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C2025B78F350017F8FC /* NetflimUITests.swift */; };
+		1F8B3C3225B78FB80017F8FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C3125B78FB80017F8FC /* HomeView.swift */; };
+		1F8B3C3E25B793540017F8FC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8B3C3D25B793540017F8FC /* Kingfisher */; };
+		1F8B3C4725B7944E0017F8FC /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C4625B7944E0017F8FC /* MovieModel.swift */; };
+		1F8B3C4C25B794D40017F8FC /* StandardHomeMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C4B25B794D40017F8FC /* StandardHomeMovieView.swift */; };
+		1F8B3C5225B795970017F8FC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B3C5125B795970017F8FC /* Helper.swift */; };
+		1F8C700425B7AAE600F12DF2 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C700325B7AAE600F12DF2 /* HomeVM.swift */; };
+		1F8C700925B7E9AB00F12DF2 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C700825B7E9AB00F12DF2 /* TopMoviePreview.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F8B3C1225B78F350017F8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8B3BF825B78F340017F8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8B3BFF25B78F340017F8FC;
+			remoteInfo = Netflim;
+		};
+		1F8B3C1D25B78F350017F8FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8B3BF825B78F340017F8FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8B3BFF25B78F340017F8FC;
+			remoteInfo = Netflim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8B3C0025B78F340017F8FC /* Netflim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8B3C0325B78F340017F8FC /* NetflimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflimApp.swift; sourceTree = "<group>"; };
+		1F8B3C0525B78F340017F8FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F8B3C0725B78F350017F8FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F8B3C0A25B78F350017F8FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F8B3C0C25B78F350017F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8B3C1125B78F350017F8FC /* NetflimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetflimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8B3C1525B78F350017F8FC /* NetflimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflimTests.swift; sourceTree = "<group>"; };
+		1F8B3C1725B78F350017F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8B3C1C25B78F350017F8FC /* NetflimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetflimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8B3C2025B78F350017F8FC /* NetflimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflimUITests.swift; sourceTree = "<group>"; };
+		1F8B3C2225B78F350017F8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8B3C3125B78FB80017F8FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1F8B3C4625B7944E0017F8FC /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		1F8B3C4B25B794D40017F8FC /* StandardHomeMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovieView.swift; sourceTree = "<group>"; };
+		1F8B3C5125B795970017F8FC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1F8C700325B7AAE600F12DF2 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		1F8C700825B7E9AB00F12DF2 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F8B3BFD25B78F340017F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8B3C3E25B793540017F8FC /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C0E25B78F350017F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C1925B78F350017F8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F8B3BF725B78F340017F8FC = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C0225B78F340017F8FC /* Netflim */,
+				1F8B3C1425B78F350017F8FC /* NetflimTests */,
+				1F8B3C1F25B78F350017F8FC /* NetflimUITests */,
+				1F8B3C0125B78F340017F8FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F8B3C0125B78F340017F8FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C0025B78F340017F8FC /* Netflim.app */,
+				1F8B3C1125B78F350017F8FC /* NetflimTests.xctest */,
+				1F8B3C1C25B78F350017F8FC /* NetflimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F8B3C0225B78F340017F8FC /* Netflim */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C5025B795840017F8FC /* Utils */,
+				1F8B3C4225B7939C0017F8FC /* Models */,
+				1F8B3C5725B795BB0017F8FC /* ViewModels */,
+				1F8B3C5625B795AC0017F8FC /* Views */,
+				1F8B3C0325B78F340017F8FC /* NetflimApp.swift */,
+				1F8B3C0725B78F350017F8FC /* Assets.xcassets */,
+				1F8B3C0C25B78F350017F8FC /* Info.plist */,
+				1F8B3C0925B78F350017F8FC /* Preview Content */,
+			);
+			path = Netflim;
+			sourceTree = "<group>";
+		};
+		1F8B3C0925B78F350017F8FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C0A25B78F350017F8FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F8B3C1425B78F350017F8FC /* NetflimTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C1525B78F350017F8FC /* NetflimTests.swift */,
+				1F8B3C1725B78F350017F8FC /* Info.plist */,
+			);
+			path = NetflimTests;
+			sourceTree = "<group>";
+		};
+		1F8B3C1F25B78F350017F8FC /* NetflimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C2025B78F350017F8FC /* NetflimUITests.swift */,
+				1F8B3C2225B78F350017F8FC /* Info.plist */,
+			);
+			path = NetflimUITests;
+			sourceTree = "<group>";
+		};
+		1F8B3C4225B7939C0017F8FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C4625B7944E0017F8FC /* MovieModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F8B3C5025B795840017F8FC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C5125B795970017F8FC /* Helper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1F8B3C5625B795AC0017F8FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F8B3C3125B78FB80017F8FC /* HomeView.swift */,
+				1F8B3C0525B78F340017F8FC /* ContentView.swift */,
+				1F8B3C4B25B794D40017F8FC /* StandardHomeMovieView.swift */,
+				1F8C700825B7E9AB00F12DF2 /* TopMoviePreview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F8B3C5725B795BB0017F8FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C700325B7AAE600F12DF2 /* HomeVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F8B3BFF25B78F340017F8FC /* Netflim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8B3C2525B78F350017F8FC /* Build configuration list for PBXNativeTarget "Netflim" */;
+			buildPhases = (
+				1F8B3BFC25B78F340017F8FC /* Sources */,
+				1F8B3BFD25B78F340017F8FC /* Frameworks */,
+				1F8B3BFE25B78F340017F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Netflim;
+			packageProductDependencies = (
+				1F8B3C3D25B793540017F8FC /* Kingfisher */,
+			);
+			productName = Netflim;
+			productReference = 1F8B3C0025B78F340017F8FC /* Netflim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F8B3C1025B78F350017F8FC /* NetflimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8B3C2825B78F350017F8FC /* Build configuration list for PBXNativeTarget "NetflimTests" */;
+			buildPhases = (
+				1F8B3C0D25B78F350017F8FC /* Sources */,
+				1F8B3C0E25B78F350017F8FC /* Frameworks */,
+				1F8B3C0F25B78F350017F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8B3C1325B78F350017F8FC /* PBXTargetDependency */,
+			);
+			name = NetflimTests;
+			productName = NetflimTests;
+			productReference = 1F8B3C1125B78F350017F8FC /* NetflimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F8B3C1B25B78F350017F8FC /* NetflimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8B3C2B25B78F350017F8FC /* Build configuration list for PBXNativeTarget "NetflimUITests" */;
+			buildPhases = (
+				1F8B3C1825B78F350017F8FC /* Sources */,
+				1F8B3C1925B78F350017F8FC /* Frameworks */,
+				1F8B3C1A25B78F350017F8FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8B3C1E25B78F350017F8FC /* PBXTargetDependency */,
+			);
+			name = NetflimUITests;
+			productName = NetflimUITests;
+			productReference = 1F8B3C1C25B78F350017F8FC /* NetflimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F8B3BF825B78F340017F8FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					1F8B3BFF25B78F340017F8FC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					1F8B3C1025B78F350017F8FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 1F8B3BFF25B78F340017F8FC;
+					};
+					1F8B3C1B25B78F350017F8FC = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 1F8B3BFF25B78F340017F8FC;
+					};
+				};
+			};
+			buildConfigurationList = 1F8B3BFB25B78F340017F8FC /* Build configuration list for PBXProject "Netflim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F8B3BF725B78F340017F8FC;
+			packageReferences = (
+				1F8B3C3C25B793540017F8FC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 1F8B3C0125B78F340017F8FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F8B3BFF25B78F340017F8FC /* Netflim */,
+				1F8B3C1025B78F350017F8FC /* NetflimTests */,
+				1F8B3C1B25B78F350017F8FC /* NetflimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F8B3BFE25B78F340017F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8B3C0B25B78F350017F8FC /* Preview Assets.xcassets in Resources */,
+				1F8B3C0825B78F350017F8FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C0F25B78F350017F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C1A25B78F350017F8FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F8B3BFC25B78F340017F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8B3C4725B7944E0017F8FC /* MovieModel.swift in Sources */,
+				1F8B3C3225B78FB80017F8FC /* HomeView.swift in Sources */,
+				1F8C700425B7AAE600F12DF2 /* HomeVM.swift in Sources */,
+				1F8B3C0625B78F340017F8FC /* ContentView.swift in Sources */,
+				1F8B3C0425B78F340017F8FC /* NetflimApp.swift in Sources */,
+				1F8C700925B7E9AB00F12DF2 /* TopMoviePreview.swift in Sources */,
+				1F8B3C4C25B794D40017F8FC /* StandardHomeMovieView.swift in Sources */,
+				1F8B3C5225B795970017F8FC /* Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C0D25B78F350017F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8B3C1625B78F350017F8FC /* NetflimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8B3C1825B78F350017F8FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8B3C2125B78F350017F8FC /* NetflimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F8B3C1325B78F350017F8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F8B3BFF25B78F340017F8FC /* Netflim */;
+			targetProxy = 1F8B3C1225B78F350017F8FC /* PBXContainerItemProxy */;
+		};
+		1F8B3C1E25B78F350017F8FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F8B3BFF25B78F340017F8FC /* Netflim */;
+			targetProxy = 1F8B3C1D25B78F350017F8FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F8B3C2325B78F350017F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F8B3C2425B78F350017F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F8B3C2625B78F350017F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Netflim/Preview Content\"";
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Netflim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.Netflim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F8B3C2725B78F350017F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Netflim/Preview Content\"";
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Netflim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.Netflim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F8B3C2925B78F350017F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				INFOPLIST_FILE = NetflimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.NetflimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflim.app/Netflim";
+			};
+			name = Debug;
+		};
+		1F8B3C2A25B78F350017F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				INFOPLIST_FILE = NetflimTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.NetflimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Netflim.app/Netflim";
+			};
+			name = Release;
+		};
+		1F8B3C2C25B78F350017F8FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				INFOPLIST_FILE = NetflimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.NetflimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Netflim;
+			};
+			name = Debug;
+		};
+		1F8B3C2D25B78F350017F8FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SNTB2L8C6Q;
+				INFOPLIST_FILE = NetflimUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcdev.NetflimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Netflim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F8B3BFB25B78F340017F8FC /* Build configuration list for PBXProject "Netflim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8B3C2325B78F350017F8FC /* Debug */,
+				1F8B3C2425B78F350017F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8B3C2525B78F350017F8FC /* Build configuration list for PBXNativeTarget "Netflim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8B3C2625B78F350017F8FC /* Debug */,
+				1F8B3C2725B78F350017F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8B3C2825B78F350017F8FC /* Build configuration list for PBXNativeTarget "NetflimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8B3C2925B78F350017F8FC /* Debug */,
+				1F8B3C2A25B78F350017F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8B3C2B25B78F350017F8FC /* Build configuration list for PBXNativeTarget "NetflimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8B3C2C25B78F350017F8FC /* Debug */,
+				1F8B3C2D25B78F350017F8FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F8B3C3C25B793540017F8FC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F8B3C3D25B793540017F8FC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F8B3C3C25B793540017F8FC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1F8B3BF825B78F340017F8FC /* Project object */;
+}
