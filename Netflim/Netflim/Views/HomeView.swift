@@ -11,6 +11,8 @@ struct HomeView: View {
     
     var viewModel = HomeVM()
     
+    let screen = UIScreen.main.bounds
+    
     var body: some View {
         ZStack {
             Color.black
@@ -19,6 +21,11 @@ struct HomeView: View {
             // main VStack
             ScrollView(showsIndicators:false) {
                 LazyVStack {
+                    
+                    TopMoviePreview(movie: MovieModel(id: UUID().uuidString, name: "DARK", thumbnailURL: URL(string: "https://picsum.photos/200/300")!, categories: ["Dystopian", "Horror", "Suspensefull", "Sci-Fi TV"]))
+                        .frame(width: screen.width)
+                        .padding(.top, -110)
+                    
                     ForEach(viewModel.allCategories, id: \.self) { category in
                         VStack {
                             HStack {
