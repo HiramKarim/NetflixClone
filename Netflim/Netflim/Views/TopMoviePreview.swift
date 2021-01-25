@@ -13,6 +13,7 @@ struct TopMoviePreview: View {
     var movie: MovieModel
     
     var body: some View {
+        
         ZStack {
             KFImage(movie.thumbnailURL)
                 .resizable()
@@ -36,6 +37,7 @@ struct TopMoviePreview: View {
                         }
                     }
                 }
+                .padding(.vertical, 6)
                 
                 HStack {
                     Spacer()
@@ -63,6 +65,7 @@ struct TopMoviePreview: View {
                     }
                     Spacer()
                 }
+                .padding(.vertical, 6)
                 
             }
             .background(
@@ -88,6 +91,7 @@ struct TopMoviePreview: View {
 
 struct TopMoviePreview_Previews: PreviewProvider {
     static var previews: some View {
-        TopMoviePreview(movie: MovieModel(id: UUID().uuidString, name: "DARK", thumbnailURL: URL(string: "https://picsum.photos/200/300")!, categories: ["Dystopian", "Horror", "Suspensefull", "Sci-Fi TV"]))
+        let helper = Helper()
+        TopMoviePreview(movie: helper.moviesArray[0])
     }
 }
