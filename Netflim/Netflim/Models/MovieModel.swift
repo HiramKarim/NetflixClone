@@ -25,9 +25,13 @@ struct MovieModel: Identifiable {
     var creators: String
     var cast: String
     
+    var moreLikeThisMovies: [MovieModel]
+    
     var episodes: [Episode]?
     
     var promotionHeadline: String?
+    
+    var trailers: [TrailerModel]
     
     var numberOfSeasonsDisplay: String {
         if let seasons = numberOfSeassons {
