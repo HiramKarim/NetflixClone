@@ -31,6 +31,7 @@
 		1F8C700425B7AAE600F12DF2 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C700325B7AAE600F12DF2 /* HomeVM.swift */; };
 		1F8C700925B7E9AB00F12DF2 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C700825B7E9AB00F12DF2 /* TopMoviePreview.swift */; };
 		1F92D8ED25BFB67C00800F70 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92D8EC25BFB67C00800F70 /* CustomTabSwitcher.swift */; };
+		1F97416025C49EFC00D5D07D /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F97415F25C49EFC00D5D07D /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		1F8C700325B7AAE600F12DF2 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		1F8C700825B7E9AB00F12DF2 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		1F92D8EC25BFB67C00800F70 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		1F97415F25C49EFC00D5D07D /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 				1F864E4B25C284E2007361AD /* SwiftUIVideoView.swift */,
 				1F864E5025C28753007361AD /* VideoPreviewImage.swift */,
 				1F864E5525C289E2007361AD /* TrailerList.swift */,
+				1F97415F25C49EFC00D5D07D /* EpisodesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				1F8B3C4725B7944E0017F8FC /* MovieModel.swift in Sources */,
 				1F864E4725C28456007361AD /* TrailerModel.swift in Sources */,
 				1F8B3C3225B78FB80017F8FC /* HomeView.swift in Sources */,
+				1F97416025C49EFC00D5D07D /* EpisodesView.swift in Sources */,
 				1F864E5125C28753007361AD /* VideoPreviewImage.swift in Sources */,
 				1F3A13C325BE91CF00B136B6 /* TopRowButtons.swift in Sources */,
 				1F3A13C825BE93B100B136B6 /* MovieDetail.swift in Sources */,

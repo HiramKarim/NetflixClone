@@ -37,6 +37,32 @@ class Helper {
                                                 season: 2,
                                                 episode: 1)
     
+    lazy var episode1 = Episode(name: "Beginnings and Endings",
+                                season: 1,
+                                episodeNumber: 1,
+                                thumbnailImageURLString: "https://picsum.photos/300/102",
+                                description: "Six months after the disappearences, the police from a task force. In 2052, Jonas learns that most of Winden perished an apocalyptic event",
+                                length: 53,
+                                videoURL: exampleVideoURL)
+    
+    lazy var episode2 = Episode(name: "Dark Matter",
+                                season: 1,
+                                episodeNumber: 2,
+                                thumbnailImageURLString: "https://picsum.photos/300/103",
+                                description: "Clausen and charlotee interview Regina. The Stranger takes Hanna to 1987, where Claudia has an unnerving encounter and Egon visits an old nemesis.",
+                                length: 54,
+                                videoURL: exampleVideoURL)
+    
+    lazy var episode3 = Episode(name: "Ghosts",
+                                season: 1,
+                                episodeNumber: 3,
+                                thumbnailImageURLString: "https://picsum.photos/300/104",
+                                description: "In 1954, a missing Helge returns, but he'll only speak to noah. In 1987, Claudia brings the time machine to Tannhaus, and Egon questions Ulrich again.",
+                                length: 56,
+                                videoURL: exampleVideoURL)
+    
+    lazy var allEpisodes = [episode1, episode2, episode3]
+    
     lazy var movieLikeThisArray:[MovieModel] = [
         MovieModel(id: UUID().uuidString,
                    name: "DARK",
