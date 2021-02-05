@@ -15,10 +15,13 @@ enum CustomTab:String {
 
 struct CustomTabSwitcher: View {
     
+    @State private var currentTab: CustomTab = .episodes
+    
     var tabs: [CustomTab]
     var movie: MovieModel
     
-    @State private var currentTab: CustomTab = .episodes
+    @Binding var showSeasonPicker: Bool
+    @Binding var selectedSeason: Int
     
     var body: some View {
         VStack {
@@ -47,7 +50,9 @@ struct CustomTabSwitcher: View {
             
             switch currentTab {
             case .episodes:
-                Text("")
+                EpisodesView(episodes: movie.episodes ?? [],
+                             showSeasonPicker: $showSeasonPicker,
+                             selectedSeason: $selectedSeason)
             case .trailers:
                 TrailerList(trailers: movie.trailers)
             case .more:
@@ -69,7 +74,10 @@ struct CustomTabSwitcher_Previews: PreviewProvider {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
-            CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: helper.moviesArray[5])
+            CustomTabSwitcher(tabs: [.episodes, .trailers, .more],
+                              movie: helper.moviesArray[5],
+                              showSeasonPicker: .constant(false),
+                              selectedSeason: .constant(1))
         }
     }
 }

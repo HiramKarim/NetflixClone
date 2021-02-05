@@ -15,6 +15,8 @@ struct HomeView: View {
     
     let helper = Helper()
     
+    @State private var movieDetailToShow:MovieModel?
+    
     var body: some View {
         ZStack {
             Color.black
@@ -46,6 +48,9 @@ struct HomeView: View {
                                         StandardHomeMovieView(movieModel: movie)
                                             .frame(width: 100, height: 200)
                                             .padding(.horizontal, 20)
+                                            .onTapGesture {
+                                                movieDetailToShow = movie
+                                            }
                                     }
                                 }
                             })
@@ -55,6 +60,16 @@ struct HomeView: View {
                 }
             }
             // main VStack
+            
+            //Color.blue
+            
+            if let movieToShow = movieDetailToShow {
+                MovieDetail(movie: movieToShow, movieDetailToShow: $movieDetailToShow)
+                    .animation(.easeIn)
+                    .transition(.opacity)
+            } else {
+                
+            }
             
         }
     }
