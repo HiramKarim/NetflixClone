@@ -29,7 +29,17 @@ class HomeVM: ObservableObject {
         movies["Sci-Fi"] = helper.moviesArray.shuffled()
     }
     
-    func getMovies(forCategory category: String) -> [MovieModel] {
+    func getMovies(forCategory category: String, andHomeRow homerow: HomeTopRow) -> [MovieModel] {
+        
+        
+        switch homerow {
+        case .home:
+            return movies[category] ?? []
+        case .movies:
+            return movies[category] ?? []
+        }
+        
+        
         return movies[category] ?? []
     }
     

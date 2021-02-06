@@ -10,6 +10,7 @@
 		1F3A13C325BE91CF00B136B6 /* TopRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13C225BE91CF00B136B6 /* TopRowButtons.swift */; };
 		1F3A13C825BE93B100B136B6 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13C725BE93B100B136B6 /* MovieDetail.swift */; };
 		1F3A13CD25BE9F8100B136B6 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13CC25BE9F8100B136B6 /* Episode.swift */; };
+		1F85023D25CE1E5F0073CC96 /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85023C25CE1E5F0073CC96 /* HomeStack.swift */; };
 		1F864E4225C27A0E007361AD /* MoreLineThisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F864E4125C27A0E007361AD /* MoreLineThisView.swift */; };
 		1F864E4725C28456007361AD /* TrailerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F864E4625C28456007361AD /* TrailerModel.swift */; };
 		1F864E4C25C284E2007361AD /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F864E4B25C284E2007361AD /* SwiftUIVideoView.swift */; };
@@ -55,6 +56,7 @@
 		1F3A13C225BE91CF00B136B6 /* TopRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRowButtons.swift; sourceTree = "<group>"; };
 		1F3A13C725BE93B100B136B6 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		1F3A13CC25BE9F8100B136B6 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		1F85023C25CE1E5F0073CC96 /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		1F864E4125C27A0E007361AD /* MoreLineThisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLineThisView.swift; sourceTree = "<group>"; };
 		1F864E4625C28456007361AD /* TrailerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerModel.swift; sourceTree = "<group>"; };
 		1F864E4B25C284E2007361AD /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				1F864E5025C28753007361AD /* VideoPreviewImage.swift */,
 				1F864E5525C289E2007361AD /* TrailerList.swift */,
 				1F97415F25C49EFC00D5D07D /* EpisodesView.swift */,
+				1F85023C25CE1E5F0073CC96 /* HomeStack.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				1F88DCA525BA1EB200060909 /* SmallVerticalButton.swift in Sources */,
 				1F864E5625C289E2007361AD /* TrailerList.swift in Sources */,
 				1F88DCAA25BA243C00060909 /* PlayButton.swift in Sources */,
+				1F85023D25CE1E5F0073CC96 /* HomeStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

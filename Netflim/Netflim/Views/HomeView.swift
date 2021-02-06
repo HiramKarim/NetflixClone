@@ -15,7 +15,12 @@ struct HomeView: View {
     
     let helper = Helper()
     
-    @State private var movieDetailToShow:MovieModel?
+    @State private var movieDetailToShow: MovieModel?
+    @State private var topRowSelectiom: HomeTopRow = .home
+    @State private var homeGenre: HomeGenre = .AllGenres
+    
+    @State private var showGenreSelection = false
+    @State private var showTopRowSelection = false
     
     var body: some View {
         ZStack {
@@ -26,42 +31,20 @@ struct HomeView: View {
             ScrollView(showsIndicators:false) {
                 LazyVStack {
                     
-                    TopRowButtons()
+                    TopRowButtons(topRowSelection: $topRowSelectiom,
+                                  homeGenre: $homeGenre,
+                                  showGenreSelection: $showGenreSelection,
+                                  showTopRowSelection: $showTopRowSelection)
                     
                     TopMoviePreview(movie: helper.moviesArray[2])
                         .frame(width: screen.width)
                         .padding(.top, -110)
                         .zIndex(-1)
                     
-                    // movies and sections
-                    ForEach(viewModel.allCategories, id: \.self) { category in
-                        VStack {
-                            HStack {
-                                Text(category)
-                                    .font(.title3)
-                                    .foregroundColor(.white)
-                                Spacer()
-                            }
-                            ScrollView(.horizontal, showsIndicators: false, content: {
-                                LazyHStack {
-                                    ForEach(viewModel.getMovies(forCategory: category)) { movie in
-                                        StandardHomeMovieView(movieModel: movie)
-                                            .frame(width: 100, height: 200)
-                                            .padding(.horizontal, 20)
-                                            .onTapGesture {
-                                                movieDetailToShow = movie
-                                            }
-                                    }
-                                }
-                            })
-                        }
-                    }
-                    // movies and sections
+                    HomeStack(viewModel: viewModel, topRowSelection: topRowSelectiom, movieDetailToShow: $movieDetailToShow)
                 }
             }
             // main VStack
-            
-            //Color.blue
             
             if let movieToShow = movieDetailToShow {
                 MovieDetail(movie: movieToShow, movieDetailToShow: $movieDetailToShow)
@@ -73,6 +56,21 @@ struct HomeView: View {
             
         }
     }
+}
+
+enum HomeTopRow: String, CaseIterable {
+    case home = "Home"
+    case tvShows = "TV Shows"
+    case movies = "Movies"
+    case myList = "My List"
+}
+
+enum HomeGenre: String {
+    case AllGenres
+    case Action
+    case Comedy
+    case Horror
+    case Thriller
 }
 
 struct HomeView_Previews: PreviewProvider {
