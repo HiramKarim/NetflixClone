@@ -16,7 +16,7 @@ struct HomeView: View {
     let helper = Helper()
     
     @State private var movieDetailToShow: MovieModel?
-    @State private var topRowSelectiom: HomeTopRow = .home
+    @State private var topRowSelection: HomeTopRow = .home
     @State private var homeGenre: HomeGenre = .AllGenres
     
     @State private var showGenreSelection = false
@@ -31,17 +31,20 @@ struct HomeView: View {
             ScrollView(showsIndicators:false) {
                 LazyVStack {
                     
-                    TopRowButtons(topRowSelection: $topRowSelectiom,
+                    TopRowButtons(topRowSelection: $topRowSelection,
                                   homeGenre: $homeGenre,
                                   showGenreSelection: $showGenreSelection,
                                   showTopRowSelection: $showTopRowSelection)
                     
-                    TopMoviePreview(movie: helper.moviesArray[2])
+                    TopMoviePreview(movie: helper.moviesArray[0])
                         .frame(width: screen.width)
                         .padding(.top, -110)
                         .zIndex(-1)
                     
-                    HomeStack(viewModel: viewModel, topRowSelection: topRowSelectiom, movieDetailToShow: $movieDetailToShow)
+                    HomeStack(viewModel: viewModel,
+                              topRowSelection: topRowSelection,
+                              selectedGenre: homeGenre,
+                              movieDetailToShow: $movieDetailToShow)
                 }
             }
             // main VStack
@@ -50,8 +53,103 @@ struct HomeView: View {
                 MovieDetail(movie: movieToShow, movieDetailToShow: $movieDetailToShow)
                     .animation(.easeIn)
                     .transition(.opacity)
-            } else {
-                
+            }
+            
+            if showTopRowSelection {
+                Group {
+                    Color.black
+                        .opacity(0.9)
+                    
+                    VStack(spacing: 40) {
+                        
+                        Spacer()
+                        
+                        ForEach(HomeTopRow.allCases, id: \.self) {
+                            topRow in
+                            Button(action: {
+                                topRowSelection = topRow
+                                showTopRowSelection = false
+                            }, label: {
+                                
+                                if topRow == topRowSelection {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20))
+                                        .bold()
+                                } else {
+                                    Text("\(topRow.rawValue)")
+                                        .foregroundColor(.gray)
+                                }
+                                
+                            })
+                        }
+                        
+                        Spacer()
+                        
+                        Button(action: {
+                            showTopRowSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30)
+                    }
+                    
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
+            }
+            
+            if showGenreSelection {
+                Group {
+                    Color.black
+                        .opacity(0.9)
+
+                    VStack(spacing: 40) {
+
+                        Spacer()
+                        
+                        ForEach(viewModel.allGenres, id: \.self) {
+                            genre in
+                            
+                            ScrollView(showsIndicators: false) {
+                                
+                                Button(action: {
+                                    homeGenre = genre
+                                    showGenreSelection = false
+                                }, label: {
+
+                                    if genre == homeGenre {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.white)
+                                            .font(.system(size: 20))
+                                            .bold()
+                                    } else {
+                                        Text("\(genre.rawValue)")
+                                            .foregroundColor(.gray)
+                                    }
+
+                                })
+                                .padding(.bottom, 40)
+                            }
+                        }
+
+                        Spacer()
+
+                        Button(action: {
+                            showGenreSelection = false
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.white)
+                                .font(.system(size: 40))
+                        })
+                        .padding(.bottom, 30)
+                    }
+
+                }
+                .edgesIgnoringSafeArea(.all)
+                .font(.title2)
             }
             
         }
@@ -65,7 +163,7 @@ enum HomeTopRow: String, CaseIterable {
     case myList = "My List"
 }
 
-enum HomeGenre: String {
+enum HomeGenre: String, CaseIterable {
     case AllGenres
     case Action
     case Comedy

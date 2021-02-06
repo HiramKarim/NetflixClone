@@ -194,7 +194,6 @@ class Helper {
                    creators:"Baran bo Odan, Jantje Friese",
                    cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
                    moreLikeThisMovies: movieLikeThisArray,
-                   episodes: allEpisodes,
                    promotionHeadline: "New episodes coming soon",
                    trailers: exampleTrailers),
         MovieModel(id: UUID().uuidString,
@@ -208,7 +207,6 @@ class Helper {
                    creators:"Baran bo Odan, Jantje Friese",
                    cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
                    moreLikeThisMovies: movieLikeThisArray,
-                   episodes: allEpisodes,
                    promotionHeadline: "New episodes coming soon",
                    trailers: exampleTrailers),
         MovieModel(id: UUID().uuidString,
@@ -222,7 +220,6 @@ class Helper {
                    creators:"Baran bo Odan, Jantje Friese",
                    cast:"Louis Hofmann, Oliver Masucci, Jordis Triebel",
                    moreLikeThisMovies: movieLikeThisArray,
-                   episodes: allEpisodes,
                    promotionHeadline: "Watch Season 6 now",
                    trailers: exampleTrailers)
     ].shuffled()

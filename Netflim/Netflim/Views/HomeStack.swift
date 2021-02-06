@@ -12,6 +12,7 @@ struct HomeStack: View {
     var viewModel = HomeVM()
     
     var topRowSelection: HomeTopRow
+    var selectedGenre: HomeGenre
     
     @Binding var movieDetailToShow: MovieModel?
     
@@ -27,7 +28,9 @@ struct HomeStack: View {
                 }
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     LazyHStack {
-                        ForEach(viewModel.getMovies(forCategory: category)) { movie in
+                        ForEach(viewModel.getMovies(forCategory: category,
+                                                    andHomeRow: topRowSelection,
+                                                    andGenre: selectedGenre)) { movie in
                             StandardHomeMovieView(movieModel: movie)
                                 .frame(width: 100, height: 200)
                                 .padding(.horizontal, 20)
@@ -49,7 +52,10 @@ struct HomeStack_Previews: PreviewProvider {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             ScrollView {
-                HomeStack(viewModel: HomeVM(), topRowSelection: .movies, movieDetailToShow: .constant(nil))
+                HomeStack(viewModel: HomeVM(),
+                          topRowSelection: .home,
+                          selectedGenre: .AllGenres,
+                          movieDetailToShow: .constant(nil))
             }
         }
     }
