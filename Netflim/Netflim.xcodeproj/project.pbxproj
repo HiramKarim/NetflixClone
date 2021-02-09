@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F19140025D309260095D269 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1913FF25D309260095D269 /* CustomTabView.swift */; };
 		1F3A13C325BE91CF00B136B6 /* TopRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13C225BE91CF00B136B6 /* TopRowButtons.swift */; };
 		1F3A13C825BE93B100B136B6 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13C725BE93B100B136B6 /* MovieDetail.swift */; };
 		1F3A13CD25BE9F8100B136B6 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3A13CC25BE9F8100B136B6 /* Episode.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1913FF25D309260095D269 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		1F3A13C225BE91CF00B136B6 /* TopRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRowButtons.swift; sourceTree = "<group>"; };
 		1F3A13C725BE93B100B136B6 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		1F3A13CC25BE9F8100B136B6 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				1F864E5525C289E2007361AD /* TrailerList.swift */,
 				1F97415F25C49EFC00D5D07D /* EpisodesView.swift */,
 				1F85023C25CE1E5F0073CC96 /* HomeStack.swift */,
+				1F1913FF25D309260095D269 /* CustomTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				1F97416025C49EFC00D5D07D /* EpisodesView.swift in Sources */,
 				1F864E5125C28753007361AD /* VideoPreviewImage.swift in Sources */,
 				1F3A13C325BE91CF00B136B6 /* TopRowButtons.swift in Sources */,
+				1F19140025D309260095D269 /* CustomTabView.swift in Sources */,
 				1F3A13C825BE93B100B136B6 /* MovieDetail.swift in Sources */,
 				1F8C700425B7AAE600F12DF2 /* HomeVM.swift in Sources */,
 				1F8B3C0425B78F340017F8FC /* NetflimApp.swift in Sources */,
