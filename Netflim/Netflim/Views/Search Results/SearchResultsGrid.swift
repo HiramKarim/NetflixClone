@@ -19,17 +19,15 @@ struct SearchResultsGrid: View {
     ]
     
     var body: some View {
-        
-        LazyVGrid(columns: columns, spacing: 10) {
+        LazyVGrid(columns: columns) {
             ForEach(movies, id: \.id) { movie in
                 StandardHomeMovieView(movieModel: movie)
-                    .frame(height: 50)
+                    .frame(height: 160)
                     .onTapGesture {
                         movieDetailToShow = movie
                     }
             }
         }
-        
     }
 }
 
