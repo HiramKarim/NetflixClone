@@ -34,7 +34,7 @@ struct CustomTabView: View {
                     Text("Cooming Soon")
                 }.tag(2)
             
-            Text("Downloads")
+            DownloadsView()
                 .tabItem {
                     Image(systemName: "arrow.down.to.line.alt")
                     Text("Downloads")

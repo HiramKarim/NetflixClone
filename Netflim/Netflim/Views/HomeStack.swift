@@ -32,8 +32,7 @@ struct HomeStack: View {
                                                     andHomeRow: topRowSelection,
                                                     andGenre: selectedGenre)) { movie in
                             StandardHomeMovieView(movieModel: movie)
-                                .frame(width: 100, height: 200)
-                                .padding(.horizontal, 20)
+                                .frame(width: 135, height: 200)
                                 .onTapGesture {
                                     movieDetailToShow = movie
                                 }
@@ -41,6 +40,7 @@ struct HomeStack: View {
                     }
                 })
             }
+            .padding(.leading, 6)
         }
         // movies and sections
     }
