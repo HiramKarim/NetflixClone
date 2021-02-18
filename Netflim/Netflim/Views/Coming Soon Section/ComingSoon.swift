@@ -26,10 +26,7 @@ struct ComingSoon: View {
                     
                     TrackableScrollView(.vertical,
                                         showIndicators: false,
-                                        contentOffset: $scrollOffset,
-                                        content: <#T##() -> _#>)
-                    
-                    TrackableScrollView {
+                                        contentOffset: $scrollOffset) {
                         LazyVStack {
                             NotificationBar(showNotificationList: $showNotificationList)
                             
