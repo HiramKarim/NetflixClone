@@ -28,7 +28,7 @@ struct CustomTabView: View {
                     Text("Search")
                 }.tag(1)
             
-            Text("Cooming Soon")
+            ComingSoon()
                 .tabItem {
                     Image(systemName: "play.rectangle")
                     Text("Cooming Soon")
